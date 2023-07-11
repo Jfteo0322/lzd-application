@@ -109,7 +109,7 @@ embed {
 }
 
 /*
-   Note: keeping IMG here will cause problems if using foreground images as sprites.
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
      In fact, it *will* cause problems with Google Maps' controls at small size.
     If this is the case for you, try uncommenting the following:
 #map img {
