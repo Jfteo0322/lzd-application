@@ -1,0 +1,239 @@
+// (Login, SignUp, forgetPassword,resetPassword) => Styles
+/* login style */
+.login-form {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  background: #fafaf0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form hr {
+  margin: 20px 0;
+  border-top: 1px solid #ddd;
+}
+
+.login-form form {
+  margin-bottom: 0;
+}
+
+.login-form .row {
+  margin-bottom: 20px;
+}
+
+.login-form .row:last-child {
+  margin-bottom: 0;
+}
+
+.login-form label {
+  font-weight: 500;
+}
+
+.login-form .redirect-link {
+  display: block;
+  text-align: center;
+  margin-top: 10px; /* Adjust margin-top value */
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-form .redirect-link:hover {
+  text-decoration: underline;
+}
+
+.login-form .d-flex {
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form .button-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form .button-group .btn {
+  margin: 0 5px;
+}
+
+/* signup styles */
+.signup-form {
+  .checkbox {
+    margin-bottom: 20px;
+  }
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  background: #fafaf0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signup-form hr {
+  margin: 20px 0;
+  border-top: 1px solid #ddd;
+}
+
+.signup-form form {
+  margin-bottom: 0;
+}
+
+.signup-form .row {
+  margin-bottom: 20px;
+}
+
+.signup-form .row:last-child {
+  margin-bottom: 0;
+}
+
+.signup-form label {
+  font-weight: 500;
+}
+
+.signup-form .redirect-link {
+  display: block;
+  text-align: center;
+  margin-top: 10px; /* Adjust margin-top value */
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-form .redirect-link:hover {
+  text-decoration: underline;
+}
+
+.signup-form .d-flex {
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form .button-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form .button-group .btn {
+  margin: 0 5px;
+}
+
+/* google & facebook login button */
+.signup-provider {
+  @include flex();
+  flex-direction: column;
+  justify-content: center;
+  align-items: middle;
+  padding-left: 60px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.google-btn,
+.facebook-btn {
+  background-color:#fafaf0;
+  @include flex();
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  width: 300px;
+  max-width: 350px;
+  border: $border-primary;
+  border-radius: $border-radius-default;
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    max-width: unset;
+  }
+
+  .btn-text {
+    margin-left: 5px;
+  }
+
+  .google-icon,
+  .facebook-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Forgot password styles */
+.forgot-password-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  background: #fafaf0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.forgot-password-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.forgot-password-form hr {
+  margin: 20px 0;
+  border-top: 1px solid #ddd;
+}
+
+.forgot-password-form form {
+  margin-bottom: 0;
+}
+
+.forgot-password-form .row {
+  margin-bottom: 20px;
+}
+
+.forgot-password-form .row:last-child {
+  margin-bottom: 0;
+}
+
+.forgot-password-form label {
+  font-weight: 500;
+}
+
+.forgot-password-form .redirect-link {
+  display: block;
+  text-align: center;
+  margin-top: 10px; /* Adjust margin-top value */
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-password-form .redirect-link:hover {
+  text-decoration: underline;
+}
+
+.forgot-password-form .d-flex {
+  justify-content: center;
+  align-items: center;
+}
+
+.forgot-password-form .button-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgot-password-form .button-group .btn {
+  margin: 0 5px;
+}
+
+.forgot-password-form input[type="text"] {
+  width: 440px; /* Adjust the height as desired */
+}
