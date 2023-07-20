@@ -41,11 +41,11 @@ const ResetPasswordForm = props => {
           <Col xs='12' lg='6'>
             <Input
               type={'password'}
-              error={formErrors['confirmPassword']}
-              label={'Confirm Password'}
-              name={'confirmPassword'}
-              placeholder={'Confirm Password'}
-              value={resetFormData.confirmPassword}
+              error={formErrors['NewPassword']}
+              label={'New Password'}
+              name={'newPassword'}
+              placeholder={'New Password'}
+              value={resetFormData.newPassword}
               onInputChange={(name, value) => {
                 resetPasswordChange(name, value);
               }}

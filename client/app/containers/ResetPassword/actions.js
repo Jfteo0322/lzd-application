@@ -29,18 +29,18 @@ export const resetPassword = token => {
     try {
       const rules = {
         password: 'required|min:6',
-        confirmPassword: 'required|min:6|same:password'
+        newPassword: 'required|min:6|same:password'
       };
       const user = getState().resetPassword.resetFormData;
 
       const { isValid, errors } = allFieldsValidation(user, rules, {
         'required.password': 'Password is required.',
         'min.password': 'Password must be at least 6 characters.',
-        'required.confirmPassword': 'Confirm password is required.',
-        'min.confirmPassword':
-          'Confirm password must be at least 6 characters.',
-        'same.confirmPassword':
-          'Confirm password and password fields must match.'
+        'required.newPassword': 'New password is required.',
+        'min.newPassword':
+          'New password must be at least 6 characters.',
+        'same.newPassword':
+          'New password and password fields must match.'
       });
 
       if (!isValid) {
@@ -75,7 +75,7 @@ export const resetAccountPassword = () => {
     try {
       const rules = {
         password: 'required|min:6',
-        confirmPassword: 'required|min:6'
+        newPassword: 'required|min:6'
       };
 
       const user = getState().resetPassword.resetFormData;
@@ -83,8 +83,8 @@ export const resetAccountPassword = () => {
       const { isValid, errors } = allFieldsValidation(user, rules, {
         'required.password': 'Password is required.',
         'min.password': 'Password must be at least 6 characters.',
-        'required.confirmPassword': 'Confirm password is required.',
-        'min.confirmPassword': 'Confirm password must be at least 6 characters.'
+        'required.newPassword': 'New password is required.',
+        'min.newPassword': 'New password must be at least 6 characters.'
       });
 
       if (!isValid) {
