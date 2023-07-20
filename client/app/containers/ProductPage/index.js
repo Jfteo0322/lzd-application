@@ -129,7 +129,7 @@ class ProductPage extends React.PureComponent {
                             product.inventory <= 0 &&
                             !shopFormErrors['quantity']
                           }
-                          text='Remove From Bag'
+                          text='Remove From Cart'
                           className='bag-btn'
                           icon={<BagIcon />}
                           onClick={() => handleRemoveFromCart(product)}
