@@ -7,7 +7,7 @@
 const today = new Date();
 
 const dateOptions = {
-  timeZone: 'UTC',
+  timeZone: 'Asia/Kuala_Lumpur',
   weekday: 'long',
   year: 'numeric',
   month: 'short',
