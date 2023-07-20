@@ -249,7 +249,7 @@ router.post('/reset/:token', async (req, res) => {
 
 router.post('/reset', auth, async (req, res) => {
   try {
-    const { password, newPassword } = req.body;
+    const { password, confirmPassword } = req.body;
     const email = req.user.email;
 
     if (!email) {
@@ -276,7 +276,7 @@ router.post('/reset', auth, async (req, res) => {
     }
 
     const salt = await bcrypt.genSalt(10);
-    const hash = await bcrypt.hash(newPassword, salt);
+    const hash = await bcrypt.hash(confirmPassword, salt);
     existingUser.password = hash;
     existingUser.save();
 
