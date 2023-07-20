@@ -15,6 +15,7 @@ const dateOptions = {
 };
 
 const timeOptions = {
+  timeZone: 'Asia/Kuala_Lumpur',
   hour: 'numeric',
   minute: 'numeric'
 };
